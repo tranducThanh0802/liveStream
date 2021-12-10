@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_grap"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/setNameFragment"
+        android:name="com.example.applivestream.SetNameFragment"
+        android:label="fragment_set_rtmp"
+        tools:layout="@layout/fragment_set_rtmp" >
+        <action
+            android:id="@+id/action_setNameFragment_to_listLiveFragment"
+            app:destination="@id/listLiveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listLiveFragment"
+        android:name="com.example.applivestream.ListLiveFragment"
+        android:label="ListLiveFragment" />
+    <fragment
+        android:id="@+id/liveStreamFragment"
+        android:name="com.example.applivestream.LiveStreamFragment"
+        android:label="LiveStreamFragment" />
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.applivestream.MenuFragment"
+        android:label="MenuFragment" >
+        <action
+            android:id="@+id/action_menuFragment_to_setRTMPFragment"
+            app:destination="@id/setRTMPFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_setNameFragment"
+            app:destination="@id/setNameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setRTMPFragment"
+        android:name="com.example.applivestream.SetRTMPFragment"
+        android:label="SetRTMPFragment" >
+        <action
+            android:id="@+id/action_setRTMPFragment_to_liveStreamFragment"
+            app:destination="@id/liveStreamFragment" />
+    </fragment>
+</navigation>

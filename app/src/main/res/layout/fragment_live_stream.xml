@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-47dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/btn_call"
+        android:layout_width="@dimen/call_button_size"
+        android:layout_height="@dimen/call_button_size"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="156dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/play"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="@+id/surfaceView" />
+
+    <ImageView
+        android:id="@+id/icon_live"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:src="@drawable/live"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:textSize="15sp"
+        android:visibility="gone"
+        android:layout_marginTop="28dp"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:text="12:21"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/icon_live"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_switch_camera"
+        android:layout_width="50dp"
+        android:layout_height="@dimen/other_button_size"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="24dp"
+        android:layout_toEndOf="@id/btn_call"
+        android:layout_toRightOf="@id/btn_call"
+        android:scaleType="centerCrop"
+        android:src="@drawable/btn_switch_camera"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_call" />
+
+    <ImageView
+        android:id="@+id/btn_mute"
+        android:layout_width="@dimen/other_button_size"
+        android:layout_height="@dimen/other_button_size"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_toStartOf="@id/btn_call"
+        android:layout_toLeftOf="@id/btn_call"
+        android:scaleType="centerCrop"
+        android:src="@drawable/btn_unmute"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/btn_call"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.97811216" />
+</androidx.constraintlayout.widget.ConstraintLayout>

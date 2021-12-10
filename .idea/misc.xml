@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/AppLiveStream/app/src/main/res/drawable/btn_endcall.xml" value="0.3828125" />
+        <entry key="..\:/Android/AppLiveStream/app/src/main/res/drawable/btn_endcall_press.xml" value="0.3828125" />
+        <entry key="..\:/Android/AppLiveStream/app/src/main/res/drawable/btn_mute.xml" value="0.3769230769230769" />
+        <entry key="..\:/Android/AppLiveStream/app/src/main/res/drawable/btn_startcall.xml" value="0.3828125" />
+        <entry key="..\:/Android/AppLiveStream/app/src/main/res/drawable/button.xml" value="0.3828125" />
+        <entry key="..\:/Android/AppLiveStream/app/src/main/res/drawable/ic_baseline_play_circle_filled_24.xml" value="0.3828125" />
+        <entry key="..\:/Android/AppLiveStream/app/src/main/res/drawable/main_background.xml" value="0.3828125" />
+        <entry key="..\:/Android/AppLiveStream/app/src/main/res/drawable/start_broadcast_bg.xml" value="0.3828125" />
+        <entry key="..\:/Android/AppLiveStream/app/src/main/res/drawable/start_broadcast_bg_clicked.xml" value="0.3828125" />
+        <entry key="..\:/Android/AppLiveStream/app/src/main/res/drawable/start_broadcast_text_color.xml" value="0.3828125" />
+        <entry key="..\:/Android/AppLiveStream/app/src/main/res/layout/activity_main.xml" value="0.28940217391304346" />
+        <entry key="..\:/Android/AppLiveStream/app/src/main/res/layout/fragment_list_live.xml" value="0.28940217391304346" />
+        <entry key="..\:/Android/AppLiveStream/app/src/main/res/layout/fragment_live_stream.xml" value="0.25" />
+        <entry key="..\:/Android/AppLiveStream/app/src/main/res/layout/fragment_menu.xml" value="0.28306159420289856" />
+        <entry key="..\:/Android/AppLiveStream/app/src/main/res/layout/fragment_set_name.xml" value="0.28940217391304346" />
+        <entry key="..\:/Android/AppLiveStream/app/src/main/res/layout/fragment_set_rtmp.xml" value="0.20520833333333333" />
+        <entry key="..\:/Android/AppLiveStream/app/src/main/res/layout/fragment_setrtmp.xml" value="0.20520833333333333" />
+        <entry key="..\:/Android/AppLiveStream/app/src/main/res/layout/frament_menu.xml" value="0.28940217391304346" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
