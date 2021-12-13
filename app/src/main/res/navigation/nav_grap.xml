@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_set_rtmp" />
     <fragment
         android:id="@+id/liveStreamFragment"
-        android:name="com.example.applivestream.LiveStreamFragment"
+        android:name="com.example.applivestream.LiveStream.LiveStreamFragment"
         android:label="LiveStreamFragment" />
     <fragment
         android:id="@+id/menuFragment"

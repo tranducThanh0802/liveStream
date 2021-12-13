@@ -2,7 +2,6 @@
     <string name="app_name">AppLiveStream</string>
     <string name="topic_edit_hint">Enter a channel key</string>
     <string name="name_edit_hint">Enter a key live</string>
-
     <string name="start_broadcast_title">Start Live Streaming</string>
     <string name="start_watch">Start Watch Live</string>
 
@@ -13,6 +12,8 @@
     <string name="liveStream">Live Stream</string>
     <string name="watchStream">Watch Stream</string>
     <string name="full">Full Screen</string>
-
-
+    <string name="record">record</string>
+    <string name="recording">recording</string>
+    <string name="micro">micro</string>
+    <string name="swapcamera">swapcamera</string>
 </resources>
