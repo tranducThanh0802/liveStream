@@ -9,15 +9,7 @@
         android:id="@+id/setNameFragment"
         android:name="com.example.applivestream.SetNameFragment"
         android:label="fragment_set_rtmp"
-        tools:layout="@layout/fragment_set_rtmp" >
-        <action
-            android:id="@+id/action_setNameFragment_to_listLiveFragment"
-            app:destination="@id/listLiveFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/listLiveFragment"
-        android:name="com.example.applivestream.ListLiveFragment"
-        android:label="ListLiveFragment" />
+        tools:layout="@layout/fragment_set_rtmp" />
     <fragment
         android:id="@+id/liveStreamFragment"
         android:name="com.example.applivestream.LiveStreamFragment"

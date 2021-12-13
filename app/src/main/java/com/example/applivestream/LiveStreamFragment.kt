@@ -4,7 +4,6 @@ import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.SurfaceHolder
@@ -12,8 +11,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
-import com.example.applivestream.databinding.FragmentListLiveBinding
 import com.example.applivestream.databinding.FragmentLiveStreamBinding
+import com.example.applivestream.di.Resource
 import com.pedro.encoder.input.video.CameraOpenException
 import com.pedro.rtmp.utils.ConnectCheckerRtmp
 import com.pedro.rtplibrary.rtmp.RtmpCamera1
@@ -21,11 +20,11 @@ import kotlinx.coroutines.*
 import java.util.concurrent.TimeUnit
 
 
-private const val ARG_PARAM1 = "key"
+private const val ARG_PARAM1 = Resource.KEYLIVE
 private const val  RETRY_COUNT = 10
-private const val URL_LIVE_STREAM = "rtmp://a.rtmp.youtube.com/live2/"
+private const val URL_LIVE_STREAM = Resource.linkRTMP
 
-class LiveStreamFragment constructor() : Fragment(), ConnectCheckerRtmp, SurfaceHolder.Callback {
+class LiveStreamFragment : Fragment(), ConnectCheckerRtmp, SurfaceHolder.Callback {
     lateinit var binding:FragmentLiveStreamBinding
     private var param1: String? = null
     private var time=0L
@@ -47,7 +46,7 @@ class LiveStreamFragment constructor() : Fragment(), ConnectCheckerRtmp, Surface
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding=FragmentLiveStreamBinding.inflate(inflater,container,false)
         return binding.root
     }

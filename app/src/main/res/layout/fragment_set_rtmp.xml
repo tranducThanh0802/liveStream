@@ -1,16 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/main_background">
-
-
-
-    <RelativeLayout
-        android:id="@+id/middle_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:focusableInTouchMode="true">
 
         <ImageView
             android:id="@+id/main_logo"
@@ -19,8 +11,10 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="@dimen/logo_margin_bottom"
+            android:contentDescription="@string/title"
             android:scaleType="centerCrop"
-            android:src="@drawable/main_logo" />
+            android:src="@drawable/main_logo"
+            tools:ignore="ImageContrastCheck" />
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/rtmp_edit"
@@ -28,15 +22,14 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/main_logo"
             android:layout_alignStart="@id/btn_Live"
-            android:layout_alignLeft="@id/btn_Live"
             android:layout_alignEnd="@id/btn_Live"
-            android:layout_alignRight="@id/btn_Live"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="@dimen/edit_margin_bottom"
             android:backgroundTint="@color/blue_alpha"
             android:gravity="center"
             android:hint="@string/topic_edit_hint"
             android:lines="1"
+            android:digits="@string/legal_channel_name_characters"
             android:paddingBottom="@dimen/edit_text_padding"
             android:textColor="@color/blue_alpha"
             android:textColorHint="@color/blue_alpha"
@@ -51,7 +44,7 @@
             android:layout_centerHorizontal="true"
             android:background="@drawable/start_broadcast_bg"
             android:gravity="center"
-            android:onClick="onStartBroadcastClicked"
+
             android:paddingStart="@dimen/start_broadcast_padding"
             android:paddingLeft="@dimen/start_broadcast_padding"
             android:paddingEnd="@dimen/start_broadcast_padding"
@@ -59,9 +52,7 @@
             android:text="@string/start_broadcast_title"
             android:textAlignment="gravity"
             android:textAllCaps="false"
-            android:textColor="@drawable/start_broadcast_text_color"
+            android:textColor="#2962FF"
             android:textSize="@dimen/text_size_large" />
-    </RelativeLayout>
-
 
 </RelativeLayout>

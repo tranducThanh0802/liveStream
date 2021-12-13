@@ -10,32 +10,33 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/main_background"
         tools:context=".MainActivity">
 
         <Button
             android:id="@+id/buttonLive"
+            style="@style/button"
             android:layout_width="180dp"
             android:layout_height="55dp"
             android:layout_marginTop="256dp"
-            style="@style/button"
-            android:text="LIVE STREAM"
+            android:text="@string/liveStream"
             app:layout_constraintBottom_toTopOf="@+id/guideline"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.963" />
+            app:layout_constraintVertical_bias="1.0" />
 
         <Button
+            android:id="@+id/buttonWatch"
             style="@style/button"
-            android:background="@drawable/button"
             android:layout_width="180dp"
             android:layout_height="55dp"
-            android:layout_marginTop="8dp"
-            android:text="Watch LIVE"
-            android:id="@+id/buttonWatch"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/button"
+            android:text="@string/watchStream"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline" />
 
@@ -45,6 +46,25 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.5" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="252dp"
+            android:layout_height="159dp"
+            android:layout_marginBottom="53dp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonLive"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.793"
+            app:srcCompat="@drawable/main_logo" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

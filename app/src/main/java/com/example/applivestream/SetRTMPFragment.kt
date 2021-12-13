@@ -6,18 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
-import androidx.navigation.NavController
-import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
-import com.example.applivestream.databinding.FragmentSetNameBinding
 import com.example.applivestream.databinding.FragmentSetRtmpBinding
 import com.pedro.rtplibrary.rtmp.RtmpCamera1
-import javax.inject.Inject
 
 
 class SetRTMPFragment : Fragment() {
     private lateinit var binding:FragmentSetRtmpBinding
-    private lateinit var rtmpCamera1: RtmpCamera1
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

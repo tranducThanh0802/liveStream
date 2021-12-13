@@ -11,9 +11,6 @@ class MainFragmentFactory @Inject constructor() :FragmentFactory(){
                   LiveStreamFragment::class.java.name ->{
                       LiveStreamFragment()
                   }
-            ListLiveFragment::class.java.name -> {
-                ListLiveFragment()
-            }
                 else ->super.instantiate(classLoader, className)
         }
 
