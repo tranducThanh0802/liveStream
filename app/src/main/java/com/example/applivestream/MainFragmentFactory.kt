@@ -2,6 +2,7 @@ package com.example.applivestream
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentFactory
+import com.example.applivestream.LiveStream.LiveStreamFragment
 import javax.inject.Inject
 
 class MainFragmentFactory @Inject constructor() :FragmentFactory(){

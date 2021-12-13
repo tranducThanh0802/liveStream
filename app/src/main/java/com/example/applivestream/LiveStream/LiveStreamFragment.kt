@@ -1,4 +1,4 @@
-package com.example.applivestream
+package com.example.applivestream.LiveStream
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -11,6 +11,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
+import com.example.applivestream.R
 import com.example.applivestream.databinding.FragmentLiveStreamBinding
 import com.example.applivestream.di.Resource
 import com.pedro.encoder.input.video.CameraOpenException

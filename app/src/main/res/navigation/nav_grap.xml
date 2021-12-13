@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/setNameFragment"
-        android:name="com.example.applivestream.SetNameFragment"
+        android:name="com.example.applivestream.Feature.SetNameFragment"
         android:label="fragment_set_rtmp"
         tools:layout="@layout/fragment_set_rtmp" />
     <fragment
@@ -16,7 +16,7 @@
         android:label="LiveStreamFragment" />
     <fragment
         android:id="@+id/menuFragment"
-        android:name="com.example.applivestream.MenuFragment"
+        android:name="com.example.applivestream.Menu.MenuFragment"
         android:label="MenuFragment" >
         <action
             android:id="@+id/action_menuFragment_to_setRTMPFragment"
@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/setRTMPFragment"
-        android:name="com.example.applivestream.SetRTMPFragment"
+        android:name="com.example.applivestream.Feature.SetRTMPFragment"
         android:label="SetRTMPFragment" >
         <action
             android:id="@+id/action_setRTMPFragment_to_liveStreamFragment"

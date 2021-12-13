@@ -1,4 +1,4 @@
-package com.example.applivestream
+package com.example.applivestream.Feature
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
+import com.example.applivestream.R
 import com.example.applivestream.databinding.FragmentSetRtmpBinding
-import com.pedro.rtplibrary.rtmp.RtmpCamera1
 
 
 class SetRTMPFragment : Fragment() {
@@ -16,7 +16,7 @@ class SetRTMPFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         binding= FragmentSetRtmpBinding.inflate(inflater, container, false)
         return binding.root

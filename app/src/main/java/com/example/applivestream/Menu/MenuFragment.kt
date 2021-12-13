@@ -1,4 +1,4 @@
-package com.example.applivestream
+package com.example.applivestream.Menu
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.example.applivestream.R
 import com.example.applivestream.databinding.FramentMenuBinding
 
 
