@@ -16,33 +16,32 @@ import pub.devrel.easypermissions.EasyPermissions
 
 
 class SetRTMPFragment : Fragment() {
-    private lateinit var binding:FragmentSetRtmpBinding
+    private lateinit var binding: FragmentSetRtmpBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        binding= FragmentSetRtmpBinding.inflate(inflater, container, false)
+        binding = FragmentSetRtmpBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         hasPermissions()
-        requireActivity().getWindow().getDecorView().setSystemUiVisibility(
-            View.SYSTEM_UI_FLAG_LAYOUT_STABLE)
-
-        binding.btnLive.setOnClickListener{
-            if(!binding.rtmpEdit.text.isNullOrEmpty()){
+        binding.btnLive.setOnClickListener {
+            if (!binding.rtmpEdit.text.isNullOrEmpty()) {
                 val bundle = bundleOf(Resource.KEYLIVE to binding.rtmpEdit.text.toString())
-                findNavController().navigate(R.id.action_setRTMPFragment_to_liveStreamFragment,bundle)
-
+                findNavController().navigate(
+                    R.id.action_setRTMPFragment_to_liveStreamFragment,
+                    bundle
+                )
             }
         }
     }
+
     private fun hasPermissions() {
         if (Resource.hasPermissions(requireContext())) {
-
             return
         }
         EasyPermissions.requestPermissions(
@@ -52,6 +51,11 @@ class SetRTMPFragment : Fragment() {
             Manifest.permission.CAMERA,
             Manifest.permission.WRITE_EXTERNAL_STORAGE
         )
+    }
 
+    override fun onResume() {
+        super.onResume()
+        val flagFullscreen = WindowManager.LayoutParams.FLAG_FULLSCREEN
+        requireActivity().window.clearFlags(flagFullscreen)
     }
 }

@@ -10,7 +10,6 @@ import com.example.applivestream.WatchLiveActivity
 import com.example.applivestream.databinding.FragmentSetNameBinding
 import com.example.applivestream.di.Resource
 
-
 class SetNameFragment : Fragment() {
     lateinit var binding: FragmentSetNameBinding
 
@@ -33,6 +32,5 @@ class SetNameFragment : Fragment() {
             }
         }
     }
-
 
 }

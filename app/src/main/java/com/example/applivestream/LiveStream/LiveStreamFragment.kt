@@ -59,7 +59,6 @@ class LiveStreamFragment : Fragment(), ConnectCheckerRtmp, SurfaceHolder.Callbac
                 btnCamera()
             }
         }
-
     }
 
     private fun btnCamera() {
@@ -138,7 +137,6 @@ class LiveStreamFragment : Fragment(), ConnectCheckerRtmp, SurfaceHolder.Callbac
             while (time > 0L) {
                 binding.time.text = getFormattedStopWatchTime(System.currentTimeMillis() - time)
                 delay(1000)
-
             }
         }
     }
@@ -152,12 +150,10 @@ class LiveStreamFragment : Fragment(), ConnectCheckerRtmp, SurfaceHolder.Callbac
     }
 
     override fun onNewBitrateRtmp(bitrate: Long) {
-
     }
 
     override fun surfaceCreated(holder: SurfaceHolder) {
         Toast.makeText(requireContext(), "surfaceCreated", Toast.LENGTH_SHORT).show()
-
     }
 
     override fun surfaceChanged(holder: SurfaceHolder, format: Int, width: Int, height: Int) {
@@ -188,8 +184,4 @@ class LiveStreamFragment : Fragment(), ConnectCheckerRtmp, SurfaceHolder.Callbac
                 "${if (seconds < 10) "0" else ""}$seconds:" +
                 "${if (milliseconds < 10) "0" else ""}$milliseconds"
     }
-
-
-
-
 }

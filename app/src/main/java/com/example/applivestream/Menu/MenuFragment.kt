@@ -13,7 +13,6 @@ import com.example.applivestream.databinding.FramentMenuBinding
 class MenuFragment : Fragment() {
     lateinit var binding: FramentMenuBinding
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -25,9 +24,7 @@ class MenuFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         binding.buttonLive.setOnClickListener{
-
             findNavController().navigate(R.id.action_menuFragment_to_setRTMPFragment)
         }
         binding.buttonWatch.setOnClickListener{

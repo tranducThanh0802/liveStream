@@ -22,7 +22,6 @@ class WatchLiveActivity  : YouTubeBaseActivity(), YouTubePlayer.OnInitializedLis
         binding.fullbtn.setOnClickListener{
             ytb.setFullscreen(true)
         }
-
     }
     override fun onInitializationSuccess(
         p0: YouTubePlayer.Provider?,
@@ -43,7 +42,6 @@ class WatchLiveActivity  : YouTubeBaseActivity(), YouTubePlayer.OnInitializedLis
         p0: YouTubePlayer.Provider?,
         p1: YouTubeInitializationResult?
     ) {
-
     }
 
 }
